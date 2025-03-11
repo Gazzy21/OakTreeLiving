@@ -20,11 +20,11 @@ body {
 
 /* Listings */
 
-.listings {
+.listings, agents {
     background: #ffffff;
     padding-left: 10vw;
     padding-right: 10vw;
-
+    border-bottom: 2px solid black;
 }
 
 .listingsheader {
