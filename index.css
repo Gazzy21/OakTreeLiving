@@ -1,38 +1,63 @@
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000; /* Ensures the navbar stays on top */
-    border-top: 4px solid #0e6749;
-    height: 10vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensures the navbar stays on top */
+  border-top: 4px solid #0e6749;
+  height: 10vh;
 }
 
 .hero {
-    border-bottom: 2px solid black;
-    height: 90vh;
-    width: 100vw;
+  border-bottom: 2px solid black;
+  height: 90vh;
+  width: 100vw;
 }
 
 /* Listings */
 
-.listings, agents {
-    background: #ffffff;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    border-bottom: 2px solid black;
+.listings {
+  background: #ffffff;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 .listingsheader {
-    font-size: 60px;
+  font-size: 60px;
 }
 
 .listing {
-    height: 15vw;
-    width: 10vw;
-    background-color: #0e6749;
+  height: 15vw;
+  width: 10vw;
+  background-color: #0e6749;
+  background-image: url("https://picsum.photos/200/300");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Agents */
+
+.agents {
+  background: #ffffff;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.agentsheader {
+  font-size: 60px;
+}
+
+:root {
+  --red: #0e6749;
+  --bgColor: bisque;
+}
+
+.framed {
+  height: 38vh;
+  box-shadow: -50px -50px 0 -40px var(--red), 50px 50px 0 -40px var(--red);
+  border: 2px solid #b7cfc7;
 }
