@@ -12,16 +12,34 @@ body {
   height: 10vh;
 }
 
+.navlogo {
+  height: 9vh;
+  width: 10vh;
+}
+
 .hero {
   border-bottom: 2px solid black;
   height: 90vh;
   width: 100vw;
 }
 
+/* Default state - element is hidden */
+.fade-in {
+  opacity: 0;
+  transform: translateY(-30px); /* Start above the original position */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Animate both opacity and vertical movement */
+}
+
+/* Active state - element fades in and drops down */
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0); /* Element returns to its original position */
+}
+
 /* Listings */
 
 .listings {
-  background: #ffffff;
+  background: transparent;
   padding-left: 10vw;
   padding-right: 10vw;
 }
@@ -60,4 +78,8 @@ body {
   height: 38vh;
   box-shadow: -50px -50px 0 -40px var(--red), 50px 50px 0 -40px var(--red);
   border: 2px solid #b7cfc7;
+}
+
+.boxshadowborder {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
