@@ -117,6 +117,12 @@ body {
   padding-right: 15px;
 }
 
+/* Resources */
+
+.bluebg {
+  background-color: rgb(13, 13, 92);
+}
+
 /* Listing Page */
 
 /* Image Section */
